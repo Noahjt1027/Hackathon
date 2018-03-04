@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+
+  <style>
+  @import url('https://fonts.googleapis.com/css?family=Open+Sans');
+  .Topbar {
+    font-family: 'Open Sans',sans-serif;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: white;
+    color:#90A4AE;
+    position: static;
+}
+
+
+li a {
+    float: left;
+    display: block;
+    text-align: center;
+    padding: 8px 8px;
+    text-decoration: none;
+}
+/*
+li a:hover {
+    background-color: #111;
+}
+*/
+.Name{
+  float: left;
+  font-size: 40px;
+  padding: 8px 12px;
+}
+
+.Contact{
+  padding: 18px 20px;
+  float: right;
+  font-size: 20px;
+}
+
+.HorizontalLine{
+  width: auto;
+  height: 1px;
+  background-color: silver;
+  margin: 8px 8px
+}
+
+.Tile-container {
+  font-family: 'Open Sans',sans-serif;
+  color: white;
+  background-color: white;
+  padding: 20px 0;
+  width:100%;
+  flex-direction: row;
+  height: 50%;
+}
+
+.Tile-grid {
+  display: flex;
+  justify-content: flex-start;
+
+}
+
+.Tile {
+  font-family: 'Open Sans',sans-serif;
+  width: 33%;
+  height: 275px;
+
+  flex-grow: 1;
+  margin-right: .2em;
+  padding: 0.25em;
+  margin: 0.25em;
+  border-radius: 0.25em;
+
+
+}
+
+.EdTile{
+  background-color: #EF5350;
+}
+
+.BioTile{
+  background-color: #1976D2;
+  overflow-y:hidden;
+  margin-right: .2em;
+  padding: 0.25em;
+  margin: 0.2em;
+}
+
+.WorkTile{
+  width:45%;
+  height:400px;
+  background-color: #00897B;
+}
+
+.ProjectTile{
+  width:45%;
+  height:400px;
+  background-color: #9575CD;
+}
+
+.Title{
+  font-family: 'Open Sans',sans-serif;
+  padding: 2px 8px;
+  font-size: 36px;
+  text-align: center;
+  margin-top: auto;
+}
+
+
+.Logo{
+
+
+}
+
+.LogoImg{
+
+
+  width: 100%;
+  height: 125%;
+
+}
+
+.SubInfo{
+  padding: 8px 8px;
+  margin-left: auto;
+  margin-right: auto;
+  color: #90A4AE;
+  background: white;
+  font-size: 15px;
+  border-radius: 0.25em;
+  width: 66%;
+}
+
+.BioInfo{
+  width: 80%;
+  bottom: 10px;
+  height:150px;
+  overflow-y: scroll;
+}
+
+.ExInfo{
+  width: 95%;
+  bottom: 10px;
+  height:300px;
+  overflow-y: scroll;
+}
+
+  </style>
+
+</head>
+
+<body>
+  <ul class = "Topbar">
+    <li class = "Name"><a class="active">First Last</a></li>
+    <li class = "Contact"><a>(111) 111-1111</a></li>
+    <li class = "Contact"><a>ThisIsAnEmail@Email.com</a></li>
+  </ul>
+  <div class = "HorizontalLine"></div>
+  <div class="Tile-container">
+    <div class = "Tile-grid">
+      <div class="Tile EdTile" class = "EdTile">
+        <!--<div class="Education">-->
+          <h1 class = "Title">Education</h1>
+          <h2 class = "SubInfo">School: </h2>
+          <h2 class = "SubInfo">Major: </h2>
+          <h2 class = "SubInfo">GPA: </h2>
+          <h2 class = "SubInfo">Graduation Year: </h2>
+
+
+      </div>
+      <div class = "Tile Logo">
+          <img class = "LogoImg" src = "wsu-central-social-badge.jpg">
+      </div>
+      <div class = "Tile BioTile">
+          <h1 class = "Title">About Me</h1>
+          <p class = "SubInfo BioInfo"> Remember outweigh do he desirous no cheerful. Do of doors water ye guest. We if prosperous comparison middletons at. Park we in lose like at no. An so to preferred convinced distrusts he determine. In musical me my placing clothes comfort pleased hearing. Any residence you satisfied and rapturous certainty two. Procured outweigh as outlived so so. On in bringing graceful proposal blessing of marriage outlived. Son rent face our loud near.
+          </p>
+      </div>
+    </div>
+
+  </div>
+<br/>
+  <div class = "Tile-container">
+    <div class = "Tile-grid">
+      <div class = "Tile WorkTile">
+        <h1 class = "Title">Work Experience</h1>
+          <div class = "SubInfo ExInfo">
+            <h1>Title: </h1>
+            <h2>Company: </h2>
+            <h3>Location: </h3>
+            <h3>Dates: </h3>
+            <h2>Description: </h2>
+            <br/>
+
+          </div>
+
+
+      </div>
+      <div class = "Tile  ProjectTile">
+        <h1 class = "Title">Projects</h1>
+        <div class = "SubInfo ExInfo">
+          <h1>Project Name: </h1>
+          <h3>Dates: </h3>
+          <h2>Description: </h2>
+          <br/>
+
+        </div>
+      </div>
+
+  </div>
+
+
+</body>
+
+</html>

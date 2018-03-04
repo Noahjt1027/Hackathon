@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+
+  <style>
+  @import url('https://fonts.googleapis.com/css?family=Open+Sans');
+  .Topbar {
+    font-family: 'Open Sans',sans-serif;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: white;
+    color:#90A4AE;
+    position: static;
+}
+
+
+li a {
+    float: left;
+    display: block;
+    text-align: center;
+    padding: 8px 8px;
+    text-decoration: none;
+}
+/*
+li a:hover {
+    background-color: #111;
+}
+*/
+.Name{
+  float: left;
+  font-size: 40px;
+  padding: 8px 12px;
+}
+
+.Contact{
+  padding: 18px 20px;
+  float: right;
+  font-size: 20px;
+}
+
+.HorizontalLine{
+  width: auto;
+  height: 1px;
+  background-color: silver;
+  margin: 8px 8px
+}
+
+.Tile-container {
+  font-family: 'Open Sans',sans-serif;
+  color: white;
+  background-color: white;
+  padding: 20px 0;
+  width: 50%;
+  flex-direction: row;
+}
+
+.Title-grid {
+  display: flex;
+  justify-content: flex-start;
+  margin-left: auto;
+  margin-right: auto;
+  padding: inherit;
+}
+
+.Tile {
+  width: 100%;
+  height: auto;
+  background-color: #EF5350;
+  border: 1px solid #fff;  /* For debugging */
+  flex-grow: 2;
+
+  padding: 0.25em;
+  margin: 0.25em;
+  border-radius: 0.25em;
+
+}
+
+
+.Logo{
+  height: auto;
+  width: 45%;
+  flex-grow: 0;
+}
+
+.LogoImg{
+  height: auto;
+  width: 100%;
+  flex-grow: 0;
+
+}
+.subBox{
+  border: 1px solid red;
+  width: 75%;
+  display: flex;
+  justify-content: flex-start;
+  border-radius: 0.25em;
+  background-color: white;
+  color:#90A4AE;
+  margin-right: auto;
+  margin-left: auto;
+}
+.Title-container2{
+  flex-direction: row;
+  font-family: 'Open Sans',sans-serif;
+  color: white;
+  background-color: white;
+  padding: 20px 0;
+  width:50%;
+}
+
+
+  </style>
+
+</head>
+
+<body>
+  <ul class = "Topbar">
+    <li class = "Name"><a class="active">First Last</a></li>
+    <li class = "Contact"><a>(111) 111-1111</a></li>
+    <li class = "Contact"><a>ThisIsAnEmail@Email.com</a></li>
+  </ul>
+  <div class = "HorizontalLine"></div>
+  <div class="Tile-container">
+    <div class = "Title-grid">
+      <div class="Tile">
+        <!--<div class="Education">-->
+          <h1>Education</h1>
+          <div class = "Major" >
+            <div class = "subBox" >
+              <h3>Major: </h3>
+            </div><!--<div class="subBox">-->
+          </div><!--<div class="Major">-->
+      </div><!--<Tile>-->
+      <div class = "Logo">
+          <img class = "LogoImg" src = "wsu-central-social-badge.png">
+      </div> <!--<logo>-->
+    </div> <!--<Tile grid>-->
+    </div> <!--<Title Tile-container>-->
+
+      <div class = "Title-container2">
+        <div class = "Experience">
+          <div class="Tile">
+
+            <h1>Work Experience</h1>
+
+            <div class = "subBox" >
+              <h3>Job Title: </h3>
+            </div>
+
+            <div class = "subBox" >
+              <h3>Company: </h3>
+            </div>
+
+            <div class = "subBox" >
+              <h3>Time Worked: </h3>
+            </div>
+
+            <div class = "subBox" >
+              <h3>Description: </h3>
+            </div>
+
+          </div><!--<Tile>-->
+        </div><!--<Experience>-->
+
+          <div class = "Projects">
+            <div class="Tile">
+              <h1>Projects</h1>
+
+              <div class = "subBox" >
+                <h3>Project Name: </h3>
+              </div>
+
+              <div class = "subBox" >
+                <h3>Company: </h3>
+              </div>
+
+              <div class = "subBox" >
+                <h3>Time Worked: </h3>
+              </div>
+
+              <div class = "subBox" >
+                <h3>Description: </h3>
+              </div>
+            </div><!--<Tile>-->
+          </div><!--<Projects>-->
+
+
+
+
+      </div><!--<Title-container2>-->
+
+
+
+  <div class = "Logo">
+
+  </div>
+
+
+</body>
+
+</html>
